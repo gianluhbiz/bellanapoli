@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-flour: #f4ece0;
+  --color-flour-2: #ebe0cf;
+  --color-ink: #1d1714;
+  --color-ink-2: #2a221d;
+  --color-tomato: #c4321f;
+  --color-tomato-deep: #9c2415;
+  --color-smoke: #6f6259;
+  --color-basil: #2f7a45;
+
+  --font-display: "Gloock", ui-serif, Georgia, serif;
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --animate-marquee: marquee 45s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-flour text-ink font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    @apply bg-tomato text-flour;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-tomato;
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}

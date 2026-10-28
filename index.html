@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f4ece0" />
+    <title>Pizzeria Bella Napoli · Ascoli Piceno dal 1968 · Due forni a legna</title>
+    <meta
+      name="description"
+      content="Pizzeria storica nel centro di Ascoli Piceno dal 1968. Due forni a legna, quattro sale, 180 posti, pizza senza glutine e integrale, olive all'ascolana. Aperti tutti i giorni dalle 19."
+    />
+    <meta property="og:title" content="Pizzeria Bella Napoli · Ascoli Piceno dal 1968" />
+    <meta property="og:description" content="Due forni a legna in Via dei Bonaparte. Aperti ogni sera dalle 19." />
+    <meta property="og:image" content="/img/forno-pala.webp" />
+    <meta property="og:type" content="restaurant" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="/img/forno-pala.webp" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Pizzeria Bella Napoli",
+        "foundingDate": "1968",
+        "servesCuisine": ["Pizza", "Italiana"],
+        "priceRange": "€",
+        "telephone": "+39 0736 257030",
+        "email": "info@pizzeriabellanapoliascoli.it",
+        "image": "/img/forno-pala.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Via dei Bonaparte 18/20",
+          "postalCode": "63100",
+          "addressLocality": "Ascoli Piceno",
+          "addressRegion": "AP",
+          "addressCountry": "IT"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 42.8544415, "longitude": 13.5786939 },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "19:00",
+          "closes": "23:59"
+        },
+        "acceptsReservations": "True",
+        "hasMenu": "/menu"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
